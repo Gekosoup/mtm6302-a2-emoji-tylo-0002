@@ -26,3 +26,12 @@ h1 {
 header p {
   font-size: 1.1rem;
 }
+
+/* Responsive emoji gallery */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}

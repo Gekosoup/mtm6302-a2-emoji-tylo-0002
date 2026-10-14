@@ -23,5 +23,38 @@ const gallery = document.getElementById('gallery');
 // Create a function that displays a chosen number of emojis
 // By default, count equals the total number of emojis
 function showEmojis(count = emojiCodes.length) {
-  
+    // Clear the gallery before creating new cards
+    gallery.innerHTML = '';
+
+    // Loop through the first count items in the array
+    for (let index = 0; index < count; index++) {
+          // Get the decimal code at the current index
+    const code = emojiCodes[index];
+
+    // Convert the decimal code into an emoji character
+    const emoji = String.fromCodePoint(code);
+
+    // Create a new card
+    const card = document.createElement('div');
+    card.classList.add('emoji-card');
+
+    // Create the emoji element
+    const emojiElement = document.createElement('span');
+    emojiElement.classList.add('emoji');
+    emojiElement.textContent = emoji;
+
+    // Create the decimal code element
+    const codeElement = document.createElement('p');
+    codeElement.classList.add('emoji-code');
+    codeElement.textContent = code;
+
+    // Add the emoji and code to the card
+    card.append(emojiElement, codeElement);
+
+    // Add the finished card to the gallery
+    gallery.appendChild(card);
+  }
 }
+
+// Display all emojis when the page loads
+showEmojis();

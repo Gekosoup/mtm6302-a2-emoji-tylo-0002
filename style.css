@@ -58,3 +58,26 @@ header p {
   font-size: 1rem;
   font-weight: bold;
 }
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 35px;
+  color: #655b80;
+}
+
+/* Adjust spacing on small screens */
+@media (max-width: 400px) {
+  body {
+    padding: 12px;
+  }
+
+  .gallery {
+    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .emoji-card {
+    padding: 15px 5px;
+  }
+}

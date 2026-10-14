@@ -16,3 +16,12 @@ const emojiCodes = [
   128187, // Laptop
   127774  // Sun
 ];
+
+// Find the empty gallery container in HTML
+const gallery = document.getElementById('gallery');
+
+// Create a function that displays a chosen number of emojis
+// By default, count equals the total number of emojis
+function showEmojis(count = emojiCodes.length) {
+  
+}

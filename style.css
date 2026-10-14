@@ -45,3 +45,10 @@ header p {
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
 }
+
+/* Emoji character */
+.emoji {
+  font-size: 3.5rem;
+  display: block;
+  margin-bottom: 12px;
+}
